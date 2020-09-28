@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="linksFromWebsite">
+    <test name="linksFinding">
+        <classes>
+            <class name="com.weather.tests.SuiteUpdatedHomePageTests"></class>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8dd5d9e2-6dec-467b-a670-96ddae3e6cda" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="ExportTestResults" outputFolder="$PROJECT_DIR$" userTempatePath="" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="XSLT Stylesheet" />
+        <option value="Enum" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1h3LlLtp0hyF46Ag80R7xzfBXCH" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\bodab\eclipse-workspace\Jpa\src\main\resources" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\bodab\eclipse-workspace\Jpa\src\main\java\browserDrivers" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.SuiteUpdatedHomePageTests.test">
+    <configuration name="C:/Users/bodab/eclipse-workspace/Jpa/testNG.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Jpa" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testNG.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SuiteUpdatedHomePageTests" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Jpa" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.weather.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="com.weather.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.weather.tests.SuiteUpdatedHomePageTests" />
+      <option name="METHOD_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea-Dtestng.dtd.http=true" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SuiteUpdatedHomePageTests.test" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Jpa" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.weather.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.weather.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.weather.tests.SuiteUpdatedHomePageTests" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SuiteUpdatedHomePageTests.testEnums" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Jpa" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.weather.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.weather.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.weather.tests.SuiteUpdatedHomePageTests" />
+      <option name="METHOD_NAME" value="testEnums" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SuiteUpdatedHomePageTests.testHeaderElementsVisibility" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Jpa" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.weather.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.weather.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.weather.tests.SuiteUpdatedHomePageTests" />
+      <option name="METHOD_NAME" value="testHeaderElementsVisibility" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SuiteUpdatedHomePageTests.testOnDisplayContinents" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Jpa" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.weather.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.weather.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.weather.tests.SuiteUpdatedHomePageTests" />
+      <option name="METHOD_NAME" value="testOnDisplayContinents" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="TestNG.SuiteUpdatedHomePageTests" />
+      <item itemvalue="TestNG.SuiteUpdatedHomePageTests.testEnums" />
+      <item itemvalue="TestNG.C:/Users/bodab/eclipse-workspace/Jpa/testNG.xml" />
+      <item itemvalue="TestNG.SuiteUpdatedHomePageTests.testHeaderElementsVisibility" />
+      <item itemvalue="TestNG.SuiteUpdatedHomePageTests.testOnDisplayContinents" />
+      <item itemvalue="TestNG.SuiteUpdatedHomePageTests.test" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.SuiteUpdatedHomePageTests.test" />
+        <item itemvalue="TestNG.SuiteUpdatedHomePageTests.testOnDisplayContinents" />
+        <item itemvalue="TestNG.C:/Users/bodab/eclipse-workspace/Jpa/testNG.xml" />
+        <item itemvalue="TestNG.SuiteUpdatedHomePageTests.testEnums" />
+        <item itemvalue="TestNG.SuiteUpdatedHomePageTests.testHeaderElementsVisibility" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8dd5d9e2-6dec-467b-a670-96ddae3e6cda" name="Default Changelist" comment="" />
+      <created>1599234978386</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1599234978386</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="361" y="71" key="#Notifications" timestamp="1601322542401">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="71" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1601322542401" />
+    <state x="477" y="60" key="#SuiteUpdatedHomePageTests" timestamp="1600521936701">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="477" y="60" key="#SuiteUpdatedHomePageTests/0.0.1536.824@0.0.1536.824" timestamp="1600521936701" />
+    <state x="499" y="167" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1600434920843">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="167" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1600434920843" />
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600524605308">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1600524605308" />
+    <state x="93" y="93" width="1350" height="638" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1600686599157">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="93" y="93" width="1350" height="638" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1536.824@0.0.1536.824" timestamp="1600686599157" />
+    <state x="507" y="215" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1599775247268">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="507" y="215" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1599775247268" />
+    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser" timestamp="1600691939568">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1600691939568" />
+    <state x="498" y="188" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1600524139326">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="498" y="188" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1600524139326" />
+    <state x="548" y="154" key="FileChooserDialogImpl" timestamp="1601322180285">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="548" y="154" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1601322180285" />
+    <state x="639" y="306" key="Github.ShareDialog" timestamp="1601320646809">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="639" y="306" key="Github.ShareDialog/0.0.1536.824@0.0.1536.824" timestamp="1601320646809" />
+    <state width="1493" height="274" key="GridCell.Tab.0.bottom" timestamp="1601296809210">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="274" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1601296809210" />
+    <state width="1493" height="274" key="GridCell.Tab.0.center" timestamp="1601296809210">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="274" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1601296809210" />
+    <state width="1493" height="274" key="GridCell.Tab.0.left" timestamp="1601296809210">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="274" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1601296809210" />
+    <state width="1493" height="274" key="GridCell.Tab.0.right" timestamp="1601296809210">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="274" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1601296809210" />
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1600878217648">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1600878217648" />
+    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1600878217648">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1600878217648" />
+    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1600878217648">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1600878217648" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1600878217648">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1600878217648" />
+    <state x="277" y="55" key="SettingsEditor" timestamp="1601322602010">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="277" y="55" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1601322602010" />
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1600902356465">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1600902356465" />
+    <state x="594" y="240" key="export.test.results" timestamp="1600793241832">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="594" y="240" key="export.test.results/0.0.1536.824@0.0.1536.824" timestamp="1600793241832" />
+    <state x="463" y="144" width="609" height="536" key="find.popup" timestamp="1600358652616">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="463" y="144" width="609" height="536" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1600358652616" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1600688512982">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1600688512982" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1600881171722">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1600881171722" />
+  </component>
+</project>
