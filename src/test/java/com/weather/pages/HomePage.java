@@ -2,6 +2,8 @@ package com.weather.pages;
 
 import com.weather.BasePage;
 import org.openqa.selenium.*;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import java.util.ArrayList;
@@ -9,6 +11,7 @@ import java.util.List;
 
 
 public class HomePage extends BasePage {
+
     //look and feel locators
     private By search = By.id("LocationSearch_input");
     private By listOfLocations = By.xpath("//button[@id=\"LocationSearch_listbox-0\"]");
@@ -36,7 +39,7 @@ public class HomePage extends BasePage {
     private By menuIcon = By.id("MainMenuTrigger");
 
     //clicking on today locators
-    private By todayForecast = By.xpath("//header[@class=\"_3A3B1\"]/h2[@class=\"_3et4e\"]");
+    private By todayForecast = By.cssSelector("section[data-testid=\"TodayWeatherModule\"]");
 
     //clicking on hourly locators
     private By textHourly = By.cssSelector("h1[class=\"_3bC6K _2DTAD\"]");
@@ -58,6 +61,10 @@ public class HomePage extends BasePage {
 
     //locator for continents display
     private By continentsList = By.cssSelector("div[class=\"_1z_mF\"]");
+
+    //locator for wind and hourly tabs
+    private By hourly = By.cssSelector("a[data-from-string=\"localsuiteNav_2_Hourly\"]");
+    private By wind = By.cssSelector("span[data-testid=\"Wind\"]");
 
     /**
      * get method for social media icons
@@ -103,8 +110,8 @@ public class HomePage extends BasePage {
      * @return - boolean, true if displayed otherwise false
      */
     public boolean logoVisibility() {
-        //javascriptExecutor = (JavascriptExecutor)driver;
-        scrollToLocation("130", "11", driver.findElement(weatherLogoIcon));
+        if(!isAvailable(weatherLogoIcon))
+            scrollToLocation("130", "11", driver.findElement(weatherLogoIcon));
         return driver.findElement(weatherLogoIcon).isDisplayed();
     }
 
@@ -184,10 +191,11 @@ public class HomePage extends BasePage {
      * @return - name of the location
      */
     public String isLandingOnDesiredLocationPositive(String location) {
-        if(isAvailable(search))
-          driver.findElement(search).click();
-        driver.findElement(search).sendKeys(location);
-        driver.findElements(desiredLocation).get(0).click();
+        if(isAvailable(search)) {
+            driver.findElement(search).click();
+            driver.findElement(search).sendKeys(location);
+            driver.findElements(desiredLocation).get(0).click();
+        }
         return driver.findElements(desiredLocationName).get(0).getText();
     }
 
@@ -227,8 +235,8 @@ public class HomePage extends BasePage {
      */
     public String isCelsiusSelected() {
         String displayed = "";
-        scrollToLocation("1294", "34", driver.findElement(tempArrow));
-        driver.findElement(tempArrow).click();
+        scrollToLocation("916", "-12", driver.findElement(tempArrow));
+            driver.findElement(tempArrow).click();
         if (isAvailable( celsius)) {
             driver.findElement(celsius).click();
             displayed = driver.findElement(tempDisplay).getText();
@@ -289,7 +297,7 @@ public class HomePage extends BasePage {
     private String todayForecastDisplay() {
         String text = "";
         if(isAvailable(todayForecast))
-        text = driver.findElement(todayForecast).getText();
+        text = driver.findElement(todayForecast).getAttribute("title");
         return text;
     }
 
@@ -377,10 +385,24 @@ public class HomePage extends BasePage {
         }
        return continents;
     }
-  public String wind() { driver.findElement(By.cssSelector("a[data-from-string=\"localsuiteNav_2_Hourly\"]")).click();
-       List<WebElement> elements = driver.findElements(By.cssSelector("div[data-testid=\"DetailsSummary\"]"));
-       String element = elements.get(0).findElement(By.xpath("//div[@data-testid=\"wind\"]")).getText();
-       return element;
+  public String changeInUnitsIfTemperatureChangesFahrenheit() {
+      if(driver.findElement(fahrenheit).getText().equals("°F")) {
+          driver.findElement(fahrenheit).click();
+          if (isClickable(hourly))
+              driver.findElement(hourly).click();
+      }
+      return driver.findElement(wind).getText();
+  }
+  public String changeInWindUnitIfTemperatureChangesCelsius() {
+
+        scrollToLocation("1294", "35", driver.findElement(tempArrow));
+             driver.findElement(tempArrow).click();
+        if(isAvailable(celsius))
+             driver.findElement(celsius).click();
+        if(isAvailable(hourly))
+             driver.findElement(hourly).click();
+
+        return driver.findElement(wind).getText();
   }
 
 }

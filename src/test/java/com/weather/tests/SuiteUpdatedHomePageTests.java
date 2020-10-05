@@ -1,16 +1,14 @@
 package com.weather.tests;
 
-import com.weather.base.test.BaseTest;
+import com.weather.base.testBase.BaseTest;
 import com.weather.commons.WeatherForecast;
 import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.testng.Assert;
 import org.testng.SkipException;
 import org.testng.annotations.*;
 import com.weather.pages.HomePage;
 import org.testng.asserts.SoftAssert;
 
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -69,8 +67,14 @@ public class SuiteUpdatedHomePageTests extends BaseTest {
     // functional test cases
     //TCTWC011, 12, 13
     //TC Case Id : TCTWC021     //TC Id: TCTWC022, 23, TCTWC015
-    @Test(description = "verify if the clicking on header elements is working as expected and displayed desired text ")
-    public void testOnHeaderElements() throws IOException, InterruptedException {
+    @Test(description = "verify if the clicking on header elements is working as expected and displayed desired text " +
+            "tests in this method as follows " +
+            "Checking if the clicking on weather logo is directing to home page" +
+            "Checking on landing in desired location based on inout given in the search bar" +
+            "Checking if any random text in the search bar displays results not found" +
+            "In the temperature display in the main page on the upper right hand corner of the page check if the temperature measure changes based up on selection" +
+            "Checking main headings of the menu items is displayed or not " )
+    public void testOnHeaderElementsSearchMenuItems() throws IOException, InterruptedException {
         SoftAssert thisAssert = new SoftAssert();
 
         homePage.isClickingOnLogoReturnsHomePage();
@@ -97,7 +101,7 @@ public class SuiteUpdatedHomePageTests extends BaseTest {
 
     //TC id: TCTWC016, 17, 18, 19, 20, 21
     @Test(description = "Verify clicking on the main forecast menu tabs and verifying if it is directed to correct page", enabled = false)
-    public void testOnSelectingForecastTabAndVerifyText() {
+    public void testOnSelectingForecastTabAndVerifyText1() {
 
         SoftAssert thisAssert = new SoftAssert();
 
@@ -115,12 +119,12 @@ public class SuiteUpdatedHomePageTests extends BaseTest {
         }
         thisAssert.assertAll();
     }
-
+    //TC id: TCTWC016, 17, 18, 19, 20, 21
     @Test(description = "running test using enums")
     /**
      * This is same above test case but using enums
      */
-    public void testEnums() {
+    public void testOnSelectingForecastTabAndVerifyText() {
         SoftAssert thisAssert = new SoftAssert();
         for (WeatherForecast forecast : WeatherForecast.values()) {
             thisAssert.assertEquals(homePage.selectForecastTabAndVerifyText(forecast.ordinal() + 1, forecast.getForeCast()), forecast.getExpectedValue(), forecast.getActualValue());
@@ -128,25 +132,22 @@ public class SuiteUpdatedHomePageTests extends BaseTest {
         thisAssert.assertAll();
     }
 
-    @Test(description = "goes to menu weather tab and check if the list is displayed as desired", enabled = false)
-    public void testOnMenuWeatherTabListSelectAndVerifyText() {
-        System.out.println(homePage.selectMenuWeatherTabListItemAndVerifyText());
-    }
-     //TCTWC024
-    @Test(description = "verify if the continent list is displayed as desired in the temperature arrow")
-    public void testOnDisplayContinents() {
+    @Test(description = "verify if the continent list is displayed as desired in the temperature arrow" +
+            "this is to test if measurement type is changing if we change temperature measurement ( temp = fahrenheit then wind = mph temp = celsius and wind = km/h)")
+    public void testOnDisplayContinentsAndChangeInMeasureIfTemperatureChanges() {
+
         SoftAssert thisAssert = new SoftAssert();
+
+        // this is for test case TCTWC026
         List<String> actualList = Arrays.asList("AMERICAS", "AFRICA", "ASIA PACIFIC", "EUROPE", "MIDDLE EAST");
         thisAssert.assertEquals(homePage.displayContinents(), actualList, "continents list is not displayed as desired");
-        thisAssert.assertAll();
-    }
 
-    @Test
-    public void testOn() {
-        SoftAssert thisAssert = new SoftAssert();
-        if(homePage.isFahrenheitSelected().equals("°F")){
-           thisAssert.assertEquals(homePage.wind(), "SSW 6 mph", "Correct temperature and wind measure is not displayed");
-        }
+         //this is to test TCTWC024
+        thisAssert.assertTrue(homePage.changeInUnitsIfTemperatureChangesFahrenheit().endsWith("mph"), "Fahrenheit temperature and wind unit mph is not displayed");
+
+        //this is for test case TCTWC025
+        thisAssert.assertTrue(homePage.changeInWindUnitIfTemperatureChangesCelsius().endsWith("km/h"), "Celsius temperature and wind km/h is not displayed");
+
         thisAssert.assertAll();
     }
 

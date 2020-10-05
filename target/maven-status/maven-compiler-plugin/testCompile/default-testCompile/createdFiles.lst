@@ -1,0 +1,5 @@
+com\weather\base\testBase\BaseTest.class
+com\weather\pages\HomePageInit.class
+com\weather\tests\SuiteHomePageTestsInit.class
+com\weather\tests\SuiteUpdatedHomePageTests.class
+com\weather\pages\HomePage.class

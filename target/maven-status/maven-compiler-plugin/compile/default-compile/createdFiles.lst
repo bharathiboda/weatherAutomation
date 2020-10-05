@@ -1,0 +1,3 @@
+com\weather\BasePage.class
+com\weather\webDriver\Wd.class
+com\weather\commons\WeatherForecast.class
