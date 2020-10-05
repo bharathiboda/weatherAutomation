@@ -193,6 +193,7 @@ public class HomePage extends BasePage {
     public String isLandingOnDesiredLocationPositive(String location) {
         if(isAvailable(search)) {
             driver.findElement(search).click();
+            if(isAvailable(search))
             driver.findElement(search).sendKeys(location);
             driver.findElements(desiredLocation).get(0).click();
         }
@@ -386,16 +387,16 @@ public class HomePage extends BasePage {
        return continents;
     }
   public String changeInUnitsIfTemperatureChangesFahrenheit() {
-      if(driver.findElement(fahrenheit).getText().equals("°F")) {
+      if(driver.findElement(fahrenheit).getText().equals("°F"))
           driver.findElement(fahrenheit).click();
-          if (isClickable(hourly))
-              driver.findElement(hourly).click();
-      }
+      if (isAvailable(hourly))
+          driver.findElement(hourly).click();
+
       return driver.findElement(wind).getText();
   }
   public String changeInWindUnitIfTemperatureChangesCelsius() {
 
-        scrollToLocation("1294", "35", driver.findElement(tempArrow));
+        scrollToLocation("1294", "25", driver.findElement(tempArrow));
              driver.findElement(tempArrow).click();
         if(isAvailable(celsius))
              driver.findElement(celsius).click();

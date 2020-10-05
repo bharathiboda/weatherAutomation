@@ -134,7 +134,7 @@ public class SuiteUpdatedHomePageTests extends BaseTest {
 
     @Test(description = "verify if the continent list is displayed as desired in the temperature arrow" +
             "this is to test if measurement type is changing if we change temperature measurement ( temp = fahrenheit then wind = mph temp = celsius and wind = km/h)")
-    public void testOnDisplayContinentsAndChangeInMeasureIfTemperatureChanges() {
+    public void testOnDisplayContinentsAndChangeInMeasureIfTemperatureChanges()  {
 
         SoftAssert thisAssert = new SoftAssert();
 

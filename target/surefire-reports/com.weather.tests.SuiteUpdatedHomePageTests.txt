@@ -1,15 +1,15 @@
 -------------------------------------------------------------------------------
 Test set: com.weather.tests.SuiteUpdatedHomePageTests
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 143.374 sec <<< FAILURE!
-testOnDisplayContinentsAndChangeInMeasureIfTemperatureChanges(com.weather.tests.SuiteUpdatedHomePageTests)  Time elapsed: 34.43 sec  <<< FAILURE!
+Tests run: 6, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 97.943 sec <<< FAILURE!
+testOnDisplayContinentsAndChangeInMeasureIfTemperatureChanges(com.weather.tests.SuiteUpdatedHomePageTests)  Time elapsed: 26.679 sec  <<< FAILURE!
 org.openqa.selenium.ElementNotInteractableException: element not interactable
   (Session info: chrome=85.0.4183.121)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'LAPTOP-AP334VUR', ip: '192.168.1.166', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\WINDOWS\TEMP\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:56671}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 346e5595598d0aa06ddddf3f4306ac90
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\WINDOWS\TEMP\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:58651}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: ceca835313714079103f99da6c29f2e9
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -22,18 +22,17 @@ Session ID: 346e5595598d0aa06ddddf3f4306ac90
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at com.weather.pages.HomePage.changeInWindUnitIfTemperatureChangesCelsius(HomePage.java:400)
-	at com.weather.tests.SuiteUpdatedHomePageTests.testOnDisplayContinentsAndChangeInMeasureIfTemperatureChanges(SuiteUpdatedHomePageTests.java:143)
+	at com.weather.pages.HomePage.changeInWindUnitIfTemperatureChangesCelsius(HomePage.java:401)
+	at com.weather.tests.SuiteUpdatedHomePageTests.testOnDisplayContinentsAndChangeInMeasureIfTemperatureChanges(SuiteUpdatedHomePageTests.java:149)
 
-testOnHeaderElementsSearchMenuItems(com.weather.tests.SuiteUpdatedHomePageTests)  Time elapsed: 10.295 sec  <<< FAILURE!
-org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+testOnHeaderElementsSearchMenuItems(com.weather.tests.SuiteUpdatedHomePageTests)  Time elapsed: 0.933 sec  <<< FAILURE!
+org.openqa.selenium.ElementNotInteractableException: element not interactable
   (Session info: chrome=85.0.4183.121)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'LAPTOP-AP334VUR', ip: '192.168.1.166', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\WINDOWS\TEMP\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:57389}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: a30af73339dc6d82f57b3658d322ead6
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\WINDOWS\TEMP\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:59288}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 3aac38a529f60e70dde21f290ff7e1b9
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -45,13 +44,7 @@ Session ID: a30af73339dc6d82f57b3658d322ead6
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:166)
-	at com.weather.pages.HomePage.isLandingOnDesiredLocationPositive(HomePage.java:198)
-	at com.weather.tests.SuiteUpdatedHomePageTests.testOnHeaderElementsSearchMenuItems(SuiteUpdatedHomePageTests.java:79)
-
-testOnSelectingForecastTabAndVerifyText(com.weather.tests.SuiteUpdatedHomePageTests)  Time elapsed: 11.832 sec  <<< FAILURE!
-java.lang.AssertionError: The following asserts failed:
-	Weekend forecast is not displayed as expected expected [East Windsor Township, NJ Weekend Weather] but found [Weekend Weather-East Windsor Township, NJ]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
-	at com.weather.tests.SuiteUpdatedHomePageTests.testOnSelectingForecastTabAndVerifyText(SuiteUpdatedHomePageTests.java:126)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+	at com.weather.pages.HomePage.isLandingOnDesiredLocationPositive(HomePage.java:196)
+	at com.weather.tests.SuiteUpdatedHomePageTests.testOnHeaderElementsSearchMenuItems(SuiteUpdatedHomePageTests.java:85)
 

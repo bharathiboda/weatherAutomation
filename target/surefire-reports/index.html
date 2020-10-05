@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods, 3 failed,   3 passed</span>
+                    <span class="method-stats">6 methods, 2 failed,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -108,11 +108,6 @@
                       <span>
                         <img width="3%" src="failed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-com.weather.tests.SuiteUpdatedHomePageTests" title="com.weather.tests.SuiteUpdatedHomePageTests" hash-for-method="testOnHeaderElementsSearchMenuItems">testOnHeaderElementsSearchMenuItems</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-com.weather.tests.SuiteUpdatedHomePageTests" title="com.weather.tests.SuiteUpdatedHomePageTests" hash-for-method="testOnSelectingForecastTabAndVerifyText">testOnSelectingForecastTabAndVerifyText</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-com.weather.tests.SuiteUpdatedHomePageTests -->
@@ -132,6 +127,11 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-com.weather.tests.SuiteUpdatedHomePageTests" title="com.weather.tests.SuiteUpdatedHomePageTests" hash-for-method="testOnForeCastMenuItems">testOnForeCastMenuItems</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-com.weather.tests.SuiteUpdatedHomePageTests" title="com.weather.tests.SuiteUpdatedHomePageTests" hash-for-method="testOnSelectingForecastTabAndVerifyText">testOnSelectingForecastTabAndVerifyText</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -167,8 +167,8 @@
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;LAPTOP-AP334VUR&apos;, ip: &apos;192.168.1.166&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\WINDOWS\TEMP\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:56671}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 346e5595598d0aa06ddddf3f4306ac90
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\WINDOWS\TEMP\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:58651}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: ceca835313714079103f99da6c29f2e9
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -177,8 +177,8 @@ Session ID: 346e5595598d0aa06ddddf3f4306ac90
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at com.weather.pages.HomePage.changeInWindUnitIfTemperatureChangesCelsius(HomePage.java:400)
-	at com.weather.tests.SuiteUpdatedHomePageTests.testOnDisplayContinentsAndChangeInMeasureIfTemperatureChanges(SuiteUpdatedHomePageTests.java:143)
+	at com.weather.pages.HomePage.changeInWindUnitIfTemperatureChangesCelsius(HomePage.java:401)
+	at com.weather.tests.SuiteUpdatedHomePageTests.testOnDisplayContinentsAndChangeInMeasureIfTemperatureChanges(SuiteUpdatedHomePageTests.java:149)
 ... Removed 38 stack frames
 </div> <!-- stack-trace -->
                   <em>
@@ -190,14 +190,13 @@ Session ID: 346e5595598d0aa06ddddf3f4306ac90
                   <a name="testOnHeaderElementsSearchMenuItems">
                   </a> <!-- testOnHeaderElementsSearchMenuItems -->
                   <span class="method-name">testOnHeaderElementsSearchMenuItems</span>
-                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element not interactable
   (Session info: chrome=85.0.4183.121)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;LAPTOP-AP334VUR&apos;, ip: &apos;192.168.1.166&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\WINDOWS\TEMP\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:57389}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: a30af73339dc6d82f57b3658d322ead6
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\WINDOWS\TEMP\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:59288}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 3aac38a529f60e70dde21f290ff7e1b9
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -205,27 +204,13 @@ Session ID: a30af73339dc6d82f57b3658d322ead6
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:166)
-	at com.weather.pages.HomePage.isLandingOnDesiredLocationPositive(HomePage.java:198)
-	at com.weather.tests.SuiteUpdatedHomePageTests.testOnHeaderElementsSearchMenuItems(SuiteUpdatedHomePageTests.java:79)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+	at com.weather.pages.HomePage.isLandingOnDesiredLocationPositive(HomePage.java:196)
+	at com.weather.tests.SuiteUpdatedHomePageTests.testOnHeaderElementsSearchMenuItems(SuiteUpdatedHomePageTests.java:85)
 ... Removed 38 stack frames
 </div> <!-- stack-trace -->
                   <em>
-(verify if the clicking on header elements is working as expected and displayed desired text )                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testOnSelectingForecastTabAndVerifyText">
-                  </a> <!-- testOnSelectingForecastTabAndVerifyText -->
-                  <span class="method-name">testOnSelectingForecastTabAndVerifyText</span>
-                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
-	Weekend forecast is not displayed as expected expected [East Windsor Township, NJ Weekend Weather] but found [Weekend Weather-East Windsor Township, NJ]
-	at com.weather.tests.SuiteUpdatedHomePageTests.testOnSelectingForecastTabAndVerifyText(SuiteUpdatedHomePageTests.java:126)
-... Removed 35 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(running test using enums)                  </em>
+(verify if the clicking on header elements is working as expected and displayed desired text tests in this method as follows Checking if the clicking on weather logo is directing to home pageChecking on landing in desired location based on inout given in the search barChecking if any random text in the search bar displays results not foundIn the temperature display in the main page on the upper right hand corner of the page check if the temperature measure changes based up on selectionChecking main headings of the menu items is displayed or not )                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -252,6 +237,15 @@ Session ID: a30af73339dc6d82f57b3658d322ead6
                   <span class="method-name">testOnForeCastMenuItems</span>
                   <em>
 (verify if the forecast of periods are displayed)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testOnSelectingForecastTabAndVerifyText">
+                  </a> <!-- testOnSelectingForecastTabAndVerifyText -->
+                  <span class="method-name">testOnSelectingForecastTabAndVerifyText</span>
+                  <em>
+(running test using enums)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -320,32 +314,32 @@ data.addRows(6);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testOnDisplayContinentsAndChangeInMeasureIfTemperatureChanges')
 data.setCell(0, 2, 'com.weather.tests.SuiteUpdatedHomePageTests')
-data.setCell(0, 3, 34419);
+data.setCell(0, 3, 26675);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'testOnSelectingForecastTabAndVerifyText')
 data.setCell(1, 2, 'com.weather.tests.SuiteUpdatedHomePageTests')
-data.setCell(1, 3, 11833);
+data.setCell(1, 3, 11812);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testOnHeaderElementsSearchMenuItems')
+data.setCell(2, 1, 'testHeaderElementsVisibility')
 data.setCell(2, 2, 'com.weather.tests.SuiteUpdatedHomePageTests')
-data.setCell(2, 3, 10293);
+data.setCell(2, 3, 4123);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testHeaderElementsVisibility')
+data.setCell(3, 1, 'testSocialMediaIconsDisplay')
 data.setCell(3, 2, 'com.weather.tests.SuiteUpdatedHomePageTests')
-data.setCell(3, 3, 10053);
+data.setCell(3, 3, 1383);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'testOnForeCastMenuItems')
+data.setCell(4, 1, 'testOnHeaderElementsSearchMenuItems')
 data.setCell(4, 2, 'com.weather.tests.SuiteUpdatedHomePageTests')
-data.setCell(4, 3, 8326);
+data.setCell(4, 3, 932);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'testSocialMediaIconsDisplay')
+data.setCell(5, 1, 'testOnForeCastMenuItems')
 data.setCell(5, 2, 'com.weather.tests.SuiteUpdatedHomePageTests')
-data.setCell(5, 3, 7678);
+data.setCell(5, 3, 307);
 window.suiteTableData['com.weather.tests.SuiteUpdatedHomePageTests']= { tableData: data, tableDiv: 'times-div-com.weather.tests.SuiteUpdatedHomePageTests'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 45 seconds</span>
               <div id="times-div-com.weather.tests.SuiteUpdatedHomePageTests">
               </div> <!-- times-div-com.weather.tests.SuiteUpdatedHomePageTests -->
             </div> <!-- times-div -->
@@ -385,77 +379,75 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testHeaderElementsVisibility</span>
-                <span class="method-start">12096 ms</span>
+                <span class="method-start">7761 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeDriver</span>
-                <span class="method-start">22150 ms</span>
+                <span class="method-start">11884 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">initializeBrowser</span>
-                <span class="method-start">22720 ms</span>
+                <span class="method-start">12123 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">testOnDisplayContinentsAndChangeInMeasureIfTemperatureChanges</span>
-                <span class="method-start">30214 ms</span>
+                <span class="method-start">18888 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeDriver</span>
-                <span class="method-start">64641 ms</span>
+                <span class="method-start">45566 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">initializeBrowser</span>
-                <span class="method-start">64952 ms</span>
+                <span class="method-start">45859 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testOnForeCastMenuItems</span>
-                <span class="method-start">72362 ms</span>
+                <span class="method-start">52922 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeDriver</span>
-                <span class="method-start">80688 ms</span>
+                <span class="method-start">53229 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">initializeBrowser</span>
-                <span class="method-start">81010 ms</span>
+                <span class="method-start">53423 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">testOnHeaderElementsSearchMenuItems</span>
-                <span class="method-start">88386 ms</span>
+                <span class="method-start">65982 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeDriver</span>
-                <span class="method-start">98682 ms</span>
+                <span class="method-start">66915 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">initializeBrowser</span>
-                <span class="method-start">103297 ms</span>
+                <span class="method-start">67011 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">testOnSelectingForecastTabAndVerifyText</span>
-                <span class="method-start">110755 ms</span>
+                <span class="method-start">73494 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeDriver</span>
-                <span class="method-start">122589 ms</span>
+                <span class="method-start">85306 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">initializeBrowser</span>
-                <span class="method-start">127016 ms</span>
+                <span class="method-start">85493 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testSocialMediaIconsDisplay</span>
-                <span class="method-start">134127 ms</span>
+                <span class="method-start">91615 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeDriver</span>
-                <span class="method-start">141805 ms</span>
+                <span class="method-start">92999 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
