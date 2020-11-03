@@ -5,11 +5,41 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8dd5d9e2-6dec-467b-a670-96ddae3e6cda" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Test Results - SuiteHomePageTestsInit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test Results - SuiteHomePageTestsInit_testOnHeaderElementsSearchMenuItems.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hs_err_pid44840.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hs_err_pid67004.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/replay_pid44840.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/replay_pid67004.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ExternalData/ExcelReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ExternalData/Manual Test cases.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ExternalData/TestData.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ExternalData/TestData1.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/weather/webDriver/BasePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/weather/base/page/BasePageInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/weather/dataProviders/DpUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ExternalData/ExcelReader.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/weather/webDriver/BasePage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/com/weather/base/page/BasePageInit.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/com/weather/dataProviders/DpUtils.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/weather/BasePage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/weather/commons/WeatherForecast.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/weather/commons/WeatherForecast.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/weather/webDriver/Wd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/weather/webDriver/Wd.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/properties/ObjectResources/OR.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/properties/ObjectResources/OR.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/properties/browserDrivers/chromedriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/properties/browserDrivers/chromedriver.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/screenshots/homePage.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/screenshots/homePage.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/weather/base/testBase/BaseTest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/weather/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/weather/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/weather/pages/HomePageInit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/weather/pages/HomePageInit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/weather/tests/SuiteHomePageTestsInit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/weather/tests/SuiteHomePageTestsInit.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/weather/tests/SuiteUpdatedHomePageTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/weather/tests/SuiteUpdatedHomePageTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Jpa-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/Jpa-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Jpa-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/weather/BasePage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/weather/commons/WeatherForecast.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/weather/commons/WeatherForecast.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/weather/webDriver/Wd.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/weather/webDriver/Wd.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.weather.tests.SuiteUpdatedHomePageTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.weather.tests.SuiteUpdatedHomePageTests.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.weather.tests.SuiteUpdatedHomePageTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.weather.tests.SuiteUpdatedHomePageTests.txt" afterDir="false" />
@@ -19,14 +49,19 @@
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-com.weather.tests.SuiteUpdatedHomePageTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-com.weather.tests.SuiteUpdatedHomePageTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/com.weather.tests.SuiteUpdatedHomePageTests/classes.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/com.weather.tests.SuiteUpdatedHomePageTests/classes.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/com.weather.tests.SuiteUpdatedHomePageTests/methods-alphabetical.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/com.weather.tests.SuiteUpdatedHomePageTests/methods-alphabetical.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/com.weather.tests.SuiteUpdatedHomePageTests/methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/com.weather.tests.SuiteUpdatedHomePageTests/methods.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/com.weather.tests.SuiteUpdatedHomePageTests/toc.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/com.weather.tests.SuiteUpdatedHomePageTests/toc.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-failed.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/weather/base/testBase/BaseTest.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/weather/pages/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/weather/pages/HomePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/weather/pages/HomePageInit.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/weather/pages/HomePageInit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/weather/tests/SuiteHomePageTestsInit.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/weather/tests/SuiteHomePageTestsInit.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/weather/tests/SuiteUpdatedHomePageTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/weather/tests/SuiteUpdatedHomePageTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testNG.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testNG.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +83,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -68,9 +104,10 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/ExternalData" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
@@ -78,15 +115,23 @@
       <recent name="C:\Users\bodab\eclipse-workspace\Jpa\src\main\resources" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\bodab\eclipse-workspace\Jpa\src\main\java\ExternalData" />
+      <recent name="C:\Users\bodab\eclipse-workspace\Jpa\src\main\properties\browserDrivers" />
       <recent name="C:\Users\bodab\eclipse-workspace\Jpa\src\main\java\browserDrivers" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.SuiteUpdatedHomePageTests.testOnDisplayContinentsAndChangeInMeasureIfTemperatureChanges">
-    <configuration name="Jpa-1.0-SNAPSHOT.jar" type="JarApplication" temporary="true">
-      <option name="JAR_PATH" value="$PROJECT_DIR$/target/Jpa-1.0-SNAPSHOT.jar" />
-      <method v="2" />
+  <component name="RunManager" selected="TestNG.C:/Users/bodab/eclipse-workspace/Jpa/testNG.xml">
+    <configuration name="C:/Users/bodab/eclipse-workspace/Jpa/testNG.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Jpa" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testNG.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="SuiteHomePageTestsInit.testOnWeatherLogoVisibility" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="SuiteHomePageTestsInit" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Jpa" />
       <extension name="coverage">
         <pattern>
@@ -96,24 +141,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.weather.tests" />
       <option name="MAIN_CLASS_NAME" value="com.weather.tests.SuiteHomePageTestsInit" />
-      <option name="METHOD_NAME" value="testOnWeatherLogoVisibility" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SuiteUpdatedHomePageTests" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Jpa" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.weather.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.weather.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.weather.tests.SuiteUpdatedHomePageTests" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -121,7 +148,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SuiteUpdatedHomePageTests.testOnDisplayContinentsAndChangeInMeasureIfTemperatureChanges" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="SuiteHomePageTestsInit.testHeaderElementsVisibility" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Jpa" />
       <extension name="coverage">
         <pattern>
@@ -130,8 +157,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.weather.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.weather.tests.SuiteUpdatedHomePageTests" />
-      <option name="METHOD_NAME" value="testOnDisplayContinentsAndChangeInMeasureIfTemperatureChanges" />
+      <option name="MAIN_CLASS_NAME" value="com.weather.tests.SuiteHomePageTestsInit" />
+      <option name="METHOD_NAME" value="testHeaderElementsVisibility" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -139,7 +166,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SuiteUpdatedHomePageTests.testOnHeaderElementsSearchMenuItems" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="SuiteHomePageTestsInit.testOnForeCastMenuItems" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Jpa" />
       <extension name="coverage">
         <pattern>
@@ -148,8 +175,26 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.weather.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.weather.tests.SuiteUpdatedHomePageTests" />
-      <option name="METHOD_NAME" value="testOnHeaderElementsSearchMenuItems" />
+      <option name="MAIN_CLASS_NAME" value="com.weather.tests.SuiteHomePageTestsInit" />
+      <option name="METHOD_NAME" value="testOnForeCastMenuItems" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SuiteHomePageTestsInit.testSocialMediaIconsDisplay" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Jpa" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.weather.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.weather.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.weather.tests.SuiteHomePageTestsInit" />
+      <option name="METHOD_NAME" value="testSocialMediaIconsDisplay" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -158,19 +203,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JAR Application.Jpa-1.0-SNAPSHOT.jar" />
-      <item itemvalue="TestNG.SuiteUpdatedHomePageTests.testOnDisplayContinentsAndChangeInMeasureIfTemperatureChanges" />
-      <item itemvalue="TestNG.SuiteHomePageTestsInit.testOnWeatherLogoVisibility" />
-      <item itemvalue="TestNG.SuiteUpdatedHomePageTests" />
-      <item itemvalue="TestNG.SuiteUpdatedHomePageTests.testOnHeaderElementsSearchMenuItems" />
+      <item itemvalue="TestNG.C:/Users/bodab/eclipse-workspace/Jpa/testNG.xml" />
+      <item itemvalue="TestNG.SuiteHomePageTestsInit" />
+      <item itemvalue="TestNG.SuiteHomePageTestsInit.testSocialMediaIconsDisplay" />
+      <item itemvalue="TestNG.SuiteHomePageTestsInit.testOnForeCastMenuItems" />
+      <item itemvalue="TestNG.SuiteHomePageTestsInit.testHeaderElementsVisibility" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.SuiteUpdatedHomePageTests.testOnDisplayContinentsAndChangeInMeasureIfTemperatureChanges" />
-        <item itemvalue="TestNG.SuiteUpdatedHomePageTests.testOnHeaderElementsSearchMenuItems" />
-        <item itemvalue="TestNG.SuiteUpdatedHomePageTests" />
-        <item itemvalue="TestNG.SuiteHomePageTestsInit.testOnWeatherLogoVisibility" />
-        <item itemvalue="JAR Application.Jpa-1.0-SNAPSHOT.jar" />
+        <item itemvalue="TestNG.C:/Users/bodab/eclipse-workspace/Jpa/testNG.xml" />
+        <item itemvalue="TestNG.SuiteHomePageTestsInit.testHeaderElementsVisibility" />
+        <item itemvalue="TestNG.SuiteHomePageTestsInit.testOnForeCastMenuItems" />
+        <item itemvalue="TestNG.SuiteHomePageTestsInit" />
+        <item itemvalue="TestNG.SuiteHomePageTestsInit.testSocialMediaIconsDisplay" />
       </list>
     </recent_temporary>
   </component>
@@ -205,92 +250,146 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1600524605308" />
-    <state x="93" y="93" width="1350" height="638" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1601403348578">
+    <state x="93" y="93" width="1350" height="638" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1603398003547">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="93" y="93" width="1350" height="638" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1536.824@0.0.1536.824" timestamp="1601403348578" />
+    <state x="93" y="93" width="1350" height="638" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1536.824@0.0.1536.824" timestamp="1603398003547" />
     <state x="507" y="215" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1599775247268">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="507" y="215" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1599775247268" />
-    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser" timestamp="1600691939568">
+    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser" timestamp="1602734628347">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1600691939568" />
+    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1602734628347" />
     <state x="498" y="188" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1600524139326">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="498" y="188" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1600524139326" />
-    <state x="548" y="154" key="FileChooserDialogImpl" timestamp="1601322180285">
+    <state x="524" y="115" key="#xdebugger.evaluate" timestamp="1603815278871">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="548" y="154" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1601322180285" />
+    <state x="524" y="115" key="#xdebugger.evaluate/0.0.1536.824@0.0.1536.824" timestamp="1603815278871" />
+    <state x="395" y="0" key="CommitChangelistDialog2" timestamp="1602210068651">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="395" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1602210068651" />
+    <state x="548" y="154" key="FileChooserDialogImpl" timestamp="1602650057434">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="548" y="154" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1602650057434" />
     <state x="639" y="306" key="Github.ShareDialog" timestamp="1601320646809">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="639" y="306" key="Github.ShareDialog/0.0.1536.824@0.0.1536.824" timestamp="1601320646809" />
-    <state width="1493" height="274" key="GridCell.Tab.0.bottom" timestamp="1601932734867">
+    <state width="1493" height="274" key="GridCell.Tab.0.bottom" timestamp="1604175442606">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="274" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1601932734867" />
-    <state width="1493" height="274" key="GridCell.Tab.0.center" timestamp="1601932734867">
+    <state width="1493" height="274" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604175442606" />
+    <state width="1493" height="274" key="GridCell.Tab.0.center" timestamp="1604175442606">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="274" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1601932734867" />
-    <state width="1493" height="274" key="GridCell.Tab.0.left" timestamp="1601932734867">
+    <state width="1493" height="274" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1604175442606" />
+    <state width="1493" height="274" key="GridCell.Tab.0.left" timestamp="1604175442606">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="274" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1601932734867" />
-    <state width="1493" height="274" key="GridCell.Tab.0.right" timestamp="1601932734867">
+    <state width="1493" height="274" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1604175442606" />
+    <state width="1493" height="274" key="GridCell.Tab.0.right" timestamp="1604175442606">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="274" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1601932734867" />
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1601480430498">
+    <state width="1493" height="274" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1604175442606" />
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1604094316378">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1601480430498" />
-    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1601480430498">
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604094316378" />
+    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1604094316378">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1601480430498" />
-    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1601480430498">
+    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1604094316378" />
+    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1604094316378">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1601480430498" />
-    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1601480430498">
+    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1604094316378" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1604094316378">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1601480430498" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1604094316378" />
+    <state x="299" y="67" key="Maven.ArtifactSearchDialog" timestamp="1602161167172">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="299" y="67" key="Maven.ArtifactSearchDialog/0.0.1536.824@0.0.1536.824" timestamp="1602161167172" />
     <state x="277" y="55" key="SettingsEditor" timestamp="1601510269490">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="55" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1601510269490" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1602020151186">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1602020151186" />
     <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1601379653482">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1601379653482" />
+    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602555107989">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1602555107989" />
+    <state x="315" y="148" width="905" height="628" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1603396284903">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="315" y="148" width="905" height="628" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1536.824@0.0.1536.824" timestamp="1603396284903" />
     <state x="594" y="240" key="export.test.results" timestamp="1600793241832">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="594" y="240" key="export.test.results/0.0.1536.824@0.0.1536.824" timestamp="1600793241832" />
-    <state x="463" y="144" width="609" height="536" key="find.popup" timestamp="1600358652616">
+    <state x="463" y="144" width="609" height="624" key="find.popup" timestamp="1602522411161">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="463" y="144" width="609" height="536" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1600358652616" />
-    <state x="425" y="187" key="run.anything.popup" timestamp="1600688512982">
+    <state x="463" y="144" width="609" height="624" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1602522411161" />
+    <state x="209" y="21" key="new project wizard" timestamp="1603741107079">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1600688512982" />
+    <state x="209" y="21" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1603741107079" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1603903608010">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1603903608010" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1601398758990">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1601398758990" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="10" />
+        </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/weather/base/page/BasePageInit.java</url>
+          <line>7</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/weather/pages/HomePageInit.java</url>
+          <line>169</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/weather/tests/SuiteHomePageTestsInit.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="TestNG">
         <watch expression="((ChromeDriver)((SuiteUpdatedHomePageTests)this).driver).webStorage" custom="org.openqa.selenium.chrome.ChromeDriver,com.weather.tests.SuiteUpdatedHomePageTests" />
       </configuration>
     </watches-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Jpa$C__Users_bodab_eclipse_workspace_Jpa_testNG_xml.ic" NAME="$PROJECT_DIR$/testNG.xml Coverage Results" MODIFIED="1603393998139" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

@@ -6,7 +6,6 @@
       <class name="com.weather.tests.SuiteUpdatedHomePageTests">
         <methods>
           <include name="closeDriver"/>
-          <include name="testOnHeaderElementsSearchMenuItems"/>
           <include name="initializeBrowser"/>
           <include name="testOnDisplayContinentsAndChangeInMeasureIfTemperatureChanges"/>
         </methods>

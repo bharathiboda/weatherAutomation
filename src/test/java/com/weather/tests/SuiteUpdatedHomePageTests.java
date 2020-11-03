@@ -1,7 +1,9 @@
 package com.weather.tests;
 
-import com.weather.base.testBase.BaseTest;
 import com.weather.commons.WeatherForecast;
+import com.weather.base.page.BasePageInit;
+import com.weather.webDriver.Wd;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.SkipException;
 import org.testng.annotations.*;
@@ -12,14 +14,13 @@ import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
 
-public class SuiteUpdatedHomePageTests extends BaseTest {
+public class SuiteUpdatedHomePageTests extends Wd {
     HomePage homePage;
 
-    @BeforeMethod()
+    @BeforeMethod
     public void initializeBrowser() {
-        driver("chrome");
-        //TestCaseID: TCTWC0001, //checks if the website is launching
-        openUrl("https://weather.com/");
+        //TestCaseID: TCTWC0001, //checks if the website is launchingi
+        initializeDriver("chrome", "https://weather.com/");
         homePage = new HomePage();
     }
 
@@ -52,18 +53,18 @@ public class SuiteUpdatedHomePageTests extends BaseTest {
         thisAssert.assertAll();
     }
 
-    @Test(description = "Verify if the social media icons displayed")
-    public void testSocialMediaIconsDisplay() {
+    //@Test(description = "Verify if the social media icons displayed")
+   /* public void testSocialMediaIconsDisplay(String browser) {
         SoftAssert thisAssert = new SoftAssert();
-        if (driver.getClass() == InternetExplorerDriver.class) {
-            throw new SkipException("Social media icons are not present in this browser" + driver.getClass());
+        if (new Wd().initializeDriver(browser).getClass() == InternetExplorerDriver.class) {
+            throw new SkipException("Social media icons are not present in this browser" + new Wd().initializeDriver(browser).getClass());
         }
-        scrollToLocation("341", "3008", driver.findElement(homePage.getSocialMediaIcons()));
+        scrollToLocation("341", "3008", new Wd().initializeDriver(browser).findElement(homePage.getSocialMediaIcons()));
         List<String> expectedValues = Arrays.asList("facebook", "twitter", "instagram", "youtube");
         thisAssert.assertEquals(homePage.isSocialMediaIconDisplayed(), expectedValues, "Social media icons are not displayed as expected");
         thisAssert.assertAll();
     }
-
+*/
     // functional test cases
     //TCTWC011, 12, 13
     //TC Case Id : TCTWC021     //TC Id: TCTWC022, 23, TCTWC015
@@ -74,11 +75,11 @@ public class SuiteUpdatedHomePageTests extends BaseTest {
             "Checking if any random text in the search bar displays results not found" +
             "In the temperature display in the main page on the upper right hand corner of the page check if the temperature measure changes based up on selection" +
             "Checking main headings of the menu items is displayed or not " )
-    public void testOnHeaderElementsSearchMenuItems() throws IOException, InterruptedException {
+    public void testOnHeaderElementsSearchMenuItems(String browser) throws IOException, InterruptedException {
         SoftAssert thisAssert = new SoftAssert();
 
         homePage.isClickingOnLogoReturnsHomePage();
-        takeAScreenShot();
+        //takeAScreenShot();
 
         // this is positive test
         //TC Case Id: TCTWC012
@@ -96,6 +97,7 @@ public class SuiteUpdatedHomePageTests extends BaseTest {
         thisAssert.assertEquals(homePage.menuItemsDisplayed(), actualList, "Menu content not displayed as expected");
 
         thisAssert.assertEquals(homePage.isCelsiusSelected(), "°C", "Celsius is not selected");
+
         thisAssert.assertAll();
     }
 
@@ -146,14 +148,14 @@ public class SuiteUpdatedHomePageTests extends BaseTest {
         thisAssert.assertTrue(homePage.changeInUnitsIfTemperatureChangesFahrenheit().endsWith("mph"), "Fahrenheit temperature and wind unit mph is not displayed");
 
         //this is for test case TCTWC025
-        thisAssert.assertTrue(homePage.changeInWindUnitIfTemperatureChangesCelsius().endsWith("km/h"), "Celsius temperature and wind km/h is not displayed");
+        thisAssert.assertTrue(homePage.changeInWindUnitIfTemperatureChangesCelsius().endsWith("km/h"), "Celsius temperature and wind unit km/h is not displayed ");
 
         thisAssert.assertAll();
     }
 
     @AfterMethod
     public void closeDriver() {
-        driver.close();
+
     }
 }
 

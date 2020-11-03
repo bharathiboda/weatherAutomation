@@ -1,9 +1,7 @@
 package com.weather.pages;
 
-import com.weather.BasePage;
+import com.weather.webDriver.BasePage;
 import org.openqa.selenium.*;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import java.util.ArrayList;
@@ -27,7 +25,7 @@ public class HomePage extends BasePage {
     private By globe = By.cssSelector("div[data-testid=\"languageSelectorSection\"]");
     private By tempArrow = By.name("triangle-down");
     private By fahrenheit = By.cssSelector("span[class=\"_170nP\"]");
-    private By celsius = By.xpath("//span[@class=\"_2X1ap\"]");
+    private By celsius = By.cssSelector("span[class=\"_2X1ap\"]");
     private By tempDisplay = By.cssSelector("span[class=\"eg0E7\"]");
     private By socialMediaIcons = By.cssSelector("a[class=\"zzd7M\"]");
 
@@ -87,13 +85,13 @@ public class HomePage extends BasePage {
      */
     public String checkLocation(String location) {
         if(isAvailable(search)) {
-            driver.findElement(search).click();
-            driver.findElement(search).sendKeys(location);
+            threadDriver.get().findElement(search).click();
+            threadDriver.get().findElement(search).sendKeys(location);
         }
         if(isAvailable(listOfLocations)) {
-            driver.findElement(listOfLocations).click();
+            threadDriver.get().findElement(listOfLocations).click();
         }
-        return driver.findElement(nameOfLocation).getText();
+        return threadDriver.get().findElement(nameOfLocation).getText();
     }
 
     /**
@@ -101,7 +99,7 @@ public class HomePage extends BasePage {
      * @return
      */
     public boolean isLogoClickable() {
-        driver.findElement(weatherLogo).click();
+        threadDriver.get().findElement(weatherLogo).click();
         return true;
     }
 
@@ -111,8 +109,8 @@ public class HomePage extends BasePage {
      */
     public boolean logoVisibility() {
         if(!isAvailable(weatherLogoIcon))
-            scrollToLocation("130", "11", driver.findElement(weatherLogoIcon));
-        return driver.findElement(weatherLogoIcon).isDisplayed();
+            scrollToLocation("130", "11", threadDriver.get().findElement(weatherLogoIcon));
+        return threadDriver.get().findElement(weatherLogoIcon).isDisplayed();
     }
 
     /**
@@ -120,9 +118,9 @@ public class HomePage extends BasePage {
      * @return - boolean, true if displayed otherwise false.
      */
     public boolean menuLocation() {
-        javascriptExecutor = (JavascriptExecutor)driver;
+        javascriptExecutor = (JavascriptExecutor)threadDriver.get();
         //scrollToLocation();
-        return driver.findElement(menuId).isDisplayed();
+        return threadDriver.get().findElement(menuId).isDisplayed();
     }
 
     /**
@@ -130,7 +128,7 @@ public class HomePage extends BasePage {
      * @return - boolean, true if displayed otherwise false
      */
     public boolean globeAndTemperatureDisplay() {
-        return driver.findElement(globe).isDisplayed();
+        return threadDriver.get().findElement(globe).isDisplayed();
     }
 
     /**
@@ -138,7 +136,7 @@ public class HomePage extends BasePage {
      * @return - boolean true if displayed otherwise false
      */
     public boolean isSearchBarPresent() {
-        return driver.findElement(search).isDisplayed();
+        return threadDriver.get().findElement(search).isDisplayed();
     }
 
 
@@ -147,7 +145,7 @@ public class HomePage extends BasePage {
      * @return - list of strings of forecast items
      */
     public List<String> areForaCastMenuItemsDisplay() {
-        List<WebElement> items = driver.findElements(foreCastMenu);
+        List<WebElement> items = threadDriver.get().findElements(foreCastMenu);
         List<String> namesOFMenu = new ArrayList<>();
         for (int i = 0; i < 6; i++) {
             namesOFMenu.add(items.get(i).getText());
@@ -160,7 +158,7 @@ public class HomePage extends BasePage {
      * @return - string present in the search bar in the default position
      */
     public String isDefaultTextDisplayed() {
-        return driver.findElement(search).getAttribute("aria-label");
+        return threadDriver.get().findElement(search).getAttribute("aria-label");
     }
 
     /**
@@ -168,7 +166,7 @@ public class HomePage extends BasePage {
      * @return- returns the list of strings of social media names displayed.
      */
     public List<String> isSocialMediaIconDisplayed() {
-        List<WebElement> listOfIcons = driver.findElements(socialMediaIcons);
+        List<WebElement> listOfIcons = threadDriver.get().findElements(socialMediaIcons);
         List<String> icons = new ArrayList<>();
         for (WebElement icon : listOfIcons) {
             icons.add(icon.getAttribute("data-testid"));
@@ -182,7 +180,7 @@ public class HomePage extends BasePage {
      * clicks on homepage logo
      */
     public void isClickingOnLogoReturnsHomePage() {
-        driver.findElement(weatherLogoIcon).click();
+        threadDriver.get().findElement(weatherLogoIcon).click();
     }
 
     /**
@@ -191,13 +189,12 @@ public class HomePage extends BasePage {
      * @return - name of the location
      */
     public String isLandingOnDesiredLocationPositive(String location) {
-        if(isAvailable(search)) {
-            driver.findElement(search).click();
-            if(isAvailable(search))
-            driver.findElement(search).sendKeys(location);
-            driver.findElements(desiredLocation).get(0).click();
-        }
-        return driver.findElements(desiredLocationName).get(0).getText();
+        if(isAvailable(search))
+            threadDriver.get().findElement(search).click();
+        if(isAvailable(search))
+            threadDriver.get().findElement(search).sendKeys(location);
+        threadDriver.get().findElements(desiredLocation).get(0).click();
+        return threadDriver.get().findElements(desiredLocationName).get(0).getText();
     }
 
     /**
@@ -208,10 +205,10 @@ public class HomePage extends BasePage {
      */
     public String isLandingOnDesiredLocationNegative(String location) {
         String text = "";
-        scrollToLocation("323", "22", driver.findElement(search));
-        new WebDriverWait(driver, 2000).until(ExpectedConditions.elementToBeClickable(search)).sendKeys(location);
+        scrollToLocation("323", "22", threadDriver.get().findElement(search));
+        new WebDriverWait(threadDriver.get(), 2000).until(ExpectedConditions.elementToBeClickable(search)).sendKeys(location);
         // driver.findElement(search).sendKeys(location);
-        text = driver.findElement(negativeLocationName).getText();
+        text = threadDriver.get().findElement(negativeLocationName).getText();
 
         return text;
     }
@@ -221,11 +218,11 @@ public class HomePage extends BasePage {
      */
     public String isFahrenheitSelected() {
         String displayed = "";
-        driver.findElement(tempArrow).click();
+        threadDriver.get().findElement(tempArrow).click();
         if (isAvailable( fahrenheit))
-            driver.findElement(fahrenheit).click();
-        if (isAvailable( fahrenheit)) {
-            displayed = driver.findElement(tempDisplay).getText();
+            threadDriver.get().findElement(fahrenheit).click();
+        if (isAvailable(tempDisplay)) {
+            displayed = threadDriver.get().findElement(tempDisplay).getText();
         }
         return displayed;
     }
@@ -236,12 +233,12 @@ public class HomePage extends BasePage {
      */
     public String isCelsiusSelected() {
         String displayed = "";
-        scrollToLocation("916", "-12", driver.findElement(tempArrow));
-            driver.findElement(tempArrow).click();
-        if (isAvailable( celsius)) {
-            driver.findElement(celsius).click();
-            displayed = driver.findElement(tempDisplay).getText();
-        }
+        scrollToLocation("916", "-12", threadDriver.get().findElement(tempArrow));
+            threadDriver.get().findElement(tempArrow).click();
+        if (isAvailable( celsius))
+            threadDriver.get().findElement(celsius).click();
+        if(isAvailable(tempDisplay))
+            displayed = threadDriver.get().findElement(tempDisplay).getText();
         return displayed;
     }
 
@@ -252,10 +249,10 @@ public class HomePage extends BasePage {
 
     public List<String> menuItemsDisplayed() {
         if(isAvailable(menuIcon))
-          driver.findElement(menuIcon).click();
+          threadDriver.get().findElement(menuIcon).click();
         List<WebElement> menu = new ArrayList<>();
         if (isAvailable( menuItems)) {
-            menu = driver.findElements(menuItems);
+            menu = threadDriver.get().findElements(menuItems);
         }
         List<String> menuList = new ArrayList<>();
         for (WebElement item : menu) {
@@ -273,7 +270,7 @@ public class HomePage extends BasePage {
 
     public String selectForecastTabAndVerifyText(int index, String foreCastName) {
         if(isAvailable(By.cssSelector("a[data-from-string=\"localsuiteNav_" + index + "_" + foreCastName + "\"]"))) {
-            driver.findElement(By.cssSelector("a[data-from-string=\"localsuiteNav_" + index + "_" + foreCastName + "\"]")).click();
+            threadDriver.get().findElement(By.cssSelector("a[data-from-string=\"localsuiteNav_" + index + "_" + foreCastName + "\"]")).click();
         }
             if (foreCastName.equals("Today"))
                 return todayForecastDisplay();
@@ -298,7 +295,7 @@ public class HomePage extends BasePage {
     private String todayForecastDisplay() {
         String text = "";
         if(isAvailable(todayForecast))
-        text = driver.findElement(todayForecast).getAttribute("title");
+        text = threadDriver.get().findElement(todayForecast).getAttribute("title");
         return text;
     }
 
@@ -309,7 +306,7 @@ public class HomePage extends BasePage {
     private String hourlyForecastDisplay() {
         String text = "";
         if(isAvailable(textHourly))
-            text = driver.findElement(textHourly).getText();
+            text = threadDriver.get().findElement(textHourly).getText();
         return text;
     }
 
@@ -320,7 +317,7 @@ public class HomePage extends BasePage {
     private String tenDayForecastDisplay() {
         String text = "";
         if(isAvailable(text10_Day))
-        text = driver.findElement(text10_Day).getText();
+        text = threadDriver.get().findElement(text10_Day).getText();
         return text;
     }
 
@@ -331,7 +328,7 @@ public class HomePage extends BasePage {
     private String monthlyForecastDisplay() {
         String text = "";
         if(isAvailable(textMonthly))
-        text = driver.findElement(textMonthly).getText();
+        text = threadDriver.get().findElement(textMonthly).getText();
         return text;
     }
 
@@ -342,7 +339,7 @@ public class HomePage extends BasePage {
     private String weekendForecastDisplay() {
         String text = "";
         if(isAvailable(textWeekend))
-         text = driver.findElement(textWeekend).getText();
+         text = threadDriver.get().findElement(textWeekend).getText();
         return text;
     }
     /**
@@ -352,7 +349,7 @@ public class HomePage extends BasePage {
     private String radarForecastDisplay(){
         String text ="";
         if(isAvailable(textRadar))
-         text = driver.findElement(textRadar).getText();
+         text = threadDriver.get().findElement(textRadar).getText();
         return text;
     }
 
@@ -361,10 +358,10 @@ public class HomePage extends BasePage {
      * @return - list of strings of weather tab list.
      */
     public List<String> selectMenuWeatherTabListItemAndVerifyText() {
-        driver.findElement(menuIcon).click();
+        threadDriver.get().findElement(menuIcon).click();
         List<String> list = new ArrayList<>();
         if(isAvailable(menuWeatherTab)) {
-           List<WebElement> listOfItems = driver.findElements(menuWeatherTab);
+           List<WebElement> listOfItems = threadDriver.get().findElements(menuWeatherTab);
            for(WebElement item : listOfItems){
                list.add(item.getText());
            }
@@ -377,9 +374,9 @@ public class HomePage extends BasePage {
     public List<String> displayContinents() {
         List<String> continents = new ArrayList<>();
         if(isAvailable(tempArrow))
-           driver.findElement(tempArrow).click();
+           threadDriver.get().findElement(tempArrow).click();
         if(isAvailable(continentsList)){
-           List<WebElement> wcontinents = driver.findElements(continentsList);
+           List<WebElement> wcontinents = threadDriver.get().findElements(continentsList);
            for(WebElement continent : wcontinents) {
                continents.add(continent.getText());
            }
@@ -387,23 +384,29 @@ public class HomePage extends BasePage {
        return continents;
     }
   public String changeInUnitsIfTemperatureChangesFahrenheit() {
-      if(driver.findElement(fahrenheit).getText().equals("°F"))
-          driver.findElement(fahrenheit).click();
-      if (isAvailable(hourly))
-          driver.findElement(hourly).click();
+      if(threadDriver.get().findElement(fahrenheit).getText().equals("°F"))
+          threadDriver.get().findElement(fahrenheit).click();
+      if (isAvailable(hourly)) {
+          if (isDisplayed(hourly))
+              threadDriver.get().findElement(hourly).click();
+      }
 
-      return driver.findElement(wind).getText();
+      return threadDriver.get().findElement(wind).getText();
   }
   public String changeInWindUnitIfTemperatureChangesCelsius() {
 
-        scrollToLocation("1294", "25", driver.findElement(tempArrow));
-             driver.findElement(tempArrow).click();
-        if(isAvailable(celsius))
-             driver.findElement(celsius).click();
-        if(isAvailable(hourly))
-             driver.findElement(hourly).click();
+      scrollToLocation("1294", "25", threadDriver.get().findElement(tempArrow));
+      if(isAvailable(tempArrow)) {
+          threadDriver.get().findElement(tempArrow).click();
+          if(isClickable(threadDriver.get().findElement(celsius)))
+            threadDriver.get().findElement(celsius).click();
+      }
 
-        return driver.findElement(wind).getText();
+      if(isAvailable(hourly)) {
+             threadDriver.get().findElement(hourly).click();
+      }
+      System.out.println(threadDriver.get().findElement(wind).getText());
+      return threadDriver.get().findElement(wind).getText();
   }
 
 }

@@ -1,7 +1,7 @@
 package com.weather.commons;
 
 public enum WeatherForecast {
-    TODAY("Today", "Today's Forecast for East Windsor Township, NJ", "Today forecast is not displayed as expected"),
+    TODAY("Today", "East Windsor Township, NJ Weather", "Today forecast is not displayed as expected"),
     HOURLY("Hourly", "Hourly Weather-East Windsor Township, NJ", "Hourly forecast is not displayed as expected"),
     TENDAY("10 Day", "10 Day Weather-East Windsor Township, NJ", "10_Day forecast is not displayed as expected"),
     WEEKEND("Weekend", "Weekend Weather-East Windsor Township, NJ", "Weekend forecast is not displayed as expected"),
