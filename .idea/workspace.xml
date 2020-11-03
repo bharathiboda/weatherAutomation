@@ -5,62 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8dd5d9e2-6dec-467b-a670-96ddae3e6cda" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Test Results - SuiteHomePageTestsInit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test Results - SuiteHomePageTestsInit_testOnHeaderElementsSearchMenuItems.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hs_err_pid44840.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hs_err_pid67004.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/replay_pid44840.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/replay_pid67004.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ExternalData/ExcelReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ExternalData/Manual Test cases.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ExternalData/TestData.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ExternalData/TestData1.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/weather/webDriver/BasePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/weather/base/page/BasePageInit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/weather/dataProviders/DpUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ExternalData/ExcelReader.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/weather/webDriver/BasePage.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/com/weather/base/page/BasePageInit.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/com/weather/dataProviders/DpUtils.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/debug.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/weather/BasePage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/weather/commons/WeatherForecast.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/weather/commons/WeatherForecast.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/weather/webDriver/Wd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/weather/webDriver/Wd.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/properties/ObjectResources/OR.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/properties/ObjectResources/OR.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/properties/browserDrivers/chromedriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/properties/browserDrivers/chromedriver.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/screenshots/homePage.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/screenshots/homePage.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/weather/base/testBase/BaseTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/weather/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/weather/pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/weather/pages/HomePageInit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/weather/pages/HomePageInit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/weather/tests/SuiteHomePageTestsInit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/weather/tests/SuiteHomePageTestsInit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/weather/tests/SuiteUpdatedHomePageTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/weather/tests/SuiteUpdatedHomePageTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Jpa-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/weather/BasePage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/weather/commons/WeatherForecast.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/weather/commons/WeatherForecast.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/weather/webDriver/Wd.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/weather/webDriver/Wd.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.weather.tests.SuiteUpdatedHomePageTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.weather.tests.SuiteUpdatedHomePageTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.weather.tests.SuiteUpdatedHomePageTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.weather.tests.SuiteUpdatedHomePageTests.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.weather.tests.SuiteUpdatedHomePageTests/Command line test.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.weather.tests.SuiteUpdatedHomePageTests/Command line test.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.weather.tests.SuiteUpdatedHomePageTests/Command line test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.weather.tests.SuiteUpdatedHomePageTests/Command line test.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.weather.tests.SuiteUpdatedHomePageTests/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.weather.tests.SuiteUpdatedHomePageTests/testng-failed.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-com.weather.tests.SuiteUpdatedHomePageTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-com.weather.tests.SuiteUpdatedHomePageTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/com.weather.tests.SuiteUpdatedHomePageTests/classes.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/com.weather.tests.SuiteUpdatedHomePageTests/classes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/com.weather.tests.SuiteUpdatedHomePageTests/methods-alphabetical.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/com.weather.tests.SuiteUpdatedHomePageTests/methods-alphabetical.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/com.weather.tests.SuiteUpdatedHomePageTests/methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/com.weather.tests.SuiteUpdatedHomePageTests/methods.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/com.weather.tests.SuiteUpdatedHomePageTests/toc.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/com.weather.tests.SuiteUpdatedHomePageTests/toc.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-failed.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/weather/base/testBase/BaseTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/weather/pages/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/weather/pages/HomePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/weather/pages/HomePageInit.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/weather/pages/HomePageInit.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/weather/tests/SuiteHomePageTestsInit.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/weather/tests/SuiteHomePageTestsInit.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/weather/tests/SuiteUpdatedHomePageTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/weather/tests/SuiteUpdatedHomePageTests.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testNG.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testNG.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
