@@ -12,8 +12,8 @@
         </run>
     </groups>-->
     <test name="Weather.com HomePage Chrome">
-        <parameter name="browser" value="chrome"/>
-        <parameter name="url" value="https://weather.com/"/>
+        <!--<parameter name="browser" value="chrome"/>
+        <parameter name="url" value="https://weather.com/"/>-->
         <classes>
             <class name="com.weather.tests.SuiteHomePageTestsInit">
                <methods>

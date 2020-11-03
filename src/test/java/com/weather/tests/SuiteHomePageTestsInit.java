@@ -21,9 +21,9 @@ public class SuiteHomePageTestsInit extends Wd {
      * this is to initiate browser and open desired url
      */
     @BeforeMethod
-    @org.testng.annotations.Parameters(value = {"browser", "url"})
-    public void openURL(String browser, String url) {
-        super.initializeDriver(browser, url);
+    //@org.testng.annotations.Parameters(value = {"browser", "url"})
+    public void openURL(/*String browser, String url*/) {
+        super.initializeDriver(getProperties("browser"), getProperties("url"));
         homePage = new HomePageInit();
     }
 
@@ -32,7 +32,7 @@ public class SuiteHomePageTestsInit extends Wd {
      */
     @Test(dataProviderClass = ExternalData.ExcelReader.class, dataProvider = "browserAndUrl", enabled = false)
     public void test(String browser, String url) {
-        openURL(browser, url);
+        //openURL(browser, url);
         //HomePageInit homePage = PageFactory.initElements(driver.get(), HomePageInit.class);
        // new Wd().initializeDriver(browser).findElement(By.xpath("//a[@data-from-string=\"localsuiteNav_4_Weekend\"]")).click();
         //System.out.println(new Wd().initializeDriver(browser).findElement(By.cssSelector("")).getAttribute(""));

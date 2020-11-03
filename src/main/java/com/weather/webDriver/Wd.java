@@ -8,16 +8,13 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
 
 public class Wd {
-    static Properties or;
+    public static Properties or;
 
     public static ThreadLocal<WebDriver> threadDriver = new ThreadLocal<>();
     JavascriptExecutor javascriptExecutor;
@@ -28,16 +25,17 @@ public class Wd {
         System.setProperty("webdriver.ie.driver", System.getProperty("user.dir") + "/src/main/properties/browserDrivers/IEDriverServer.exe");
     }
 
-    private void openProperties(){
+    public static String getProperties(String property){
         try {
             or = new Properties();
-            FileInputStream input = new FileInputStream(System.getProperty("user.dir") + "/src/main/java/ObjectResources/OR.properties");
+            FileInputStream input = new FileInputStream(System.getProperty("user.dir") + "/src/main/properties/ObjectResources/OR.properties");
             or.load(input);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
+        return or.getProperty(property);
     }
 
     /**
@@ -61,6 +59,7 @@ public class Wd {
                     System.out.println("Please provide correct name of the browser : " + or.getProperty("browser"));
             }
         threadDriver.get().get(url);
+
     }
 
     /**
