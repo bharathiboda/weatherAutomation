@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="Weather.com Forecast" thread-count="1" parallel="methods" >
-    <groups>
-        <define name="regression">
-            <include name="hello"/>
-            <include name="hello"/>
-
-        </define>
-        <run>
-            <include name="regression"/>
-        </run>
-    </groups> 
+  
     <test name="Weather.com HomePage Chrome">
         <parameter name="browser" value="chrome"/>
         <parameter name="url" value="https://weather.com/"/>
