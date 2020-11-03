@@ -366,5 +366,8 @@ public class HomePageInit extends Wd {
         hourly.click();
         return getText(wind);
     }
+    public String returnTest() {
+        return "text";
+    }
 }
 
